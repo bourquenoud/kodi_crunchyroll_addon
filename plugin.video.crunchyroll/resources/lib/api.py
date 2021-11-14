@@ -162,7 +162,7 @@ def request(args, method, options, failed=False):
 
     # check for error
     if json_data["error"]:
-        xbmc.log("[PLUGIN] %s: API returned error '%s'" % (args._addonname, str(json_data)), xbmc.LOGNOTICE)
+        xbmc.log("[PLUGIN] %s: API returned error '%s'" % (args._addonname, str(json_data)), xbmc.LOGINFO)
         args._session_restart = True
         if not failed:
             # retry request, session expired
