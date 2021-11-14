@@ -156,6 +156,9 @@ def request(args, method, options, failed=False):
     url = API.URL + method + ".0.json"
     response = urlopen(url, payload.encode("utf-8"))
 
+    # log the payload
+    xbmc.log("[PLUGIN] %s: API payload '%s'" % (args._addonname, payload.encode("utf-8")), xbmc.LOGINFO)
+
     # parse response
     json_data = response.read().decode("utf-8")
     json_data = json.loads(json_data)
