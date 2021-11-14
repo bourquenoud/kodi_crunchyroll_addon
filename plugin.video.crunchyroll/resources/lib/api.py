@@ -40,7 +40,7 @@ class API:
     """
     URL    = "https://api.crunchyroll.com/"
     VERSON = "1.1.21.0"
-    TOKEN  = "LNDJgOit5yaRIWN"
+    TOKEN  = "WveH9VkPLrXvuNm"
     DEVICE = "com.crunchyroll.windows.desktop"
 
 
