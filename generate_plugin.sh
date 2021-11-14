@@ -1,12 +1,21 @@
 #!/usr/bin/bash
 
 echo "********GENERATING PLUGIN*********"
+echo "$#"
+if [ "$#" -ge 1 ]; then
+    name=$1
+else
+    name="crunchyroll_plugin.zip"
+    echo "Default name"
+fi
+echo "Archive name is \"$name\""
+
 echo "Removing old plugin"
 
-rm crunchyroll_plugin.zip
+rm $name
 
 echo "Creating new plugin"
 
-zip -r crunchyroll_plugin.zip plugin.video.crunchyroll
+zip -rq $name plugin.video.crunchyroll
 
-echo "DONE!"
+echo "***************DONE***************"
