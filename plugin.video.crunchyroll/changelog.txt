@@ -1,3 +1,7 @@
+v4.0.0 (2021.11.14)
+- Ported to Python 3
+- Compatibility with Kodi 19 (Matrix)
+
 v3.1.1 (2018.09.29)
 - Remove video quality selection
 
