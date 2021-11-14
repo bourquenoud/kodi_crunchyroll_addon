@@ -46,9 +46,6 @@ class API:
 
 def start(args):
 
-    import web_pdb; web_pdb.set_trace()
-
-
     """Login and session handler
     """
     # create cookiejar
